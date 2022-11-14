@@ -34,7 +34,7 @@ gulp.task('build-app', function() {
         .pipe(sourcemaps.init())
         .pipe(gulp.dest(outputFolder))
         .pipe(rename({suffix: '.min'}))
-        .pipe(uglify())
+        //.pipe(uglify())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(outputFolder));
 });
@@ -46,7 +46,7 @@ gulp.task('build-demo-js', function() {
         .pipe(sourcemaps.init())
         .pipe(gulp.dest(demoOutputFolder))
         .pipe(rename({suffix: '.min'}))
-        .pipe(uglify())
+        //.pipe(uglify())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(demoOutputFolder));
 });
